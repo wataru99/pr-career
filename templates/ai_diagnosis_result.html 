@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>AI診断結果 | PR Career Platform</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    body {
+      background: linear-gradient(to right, #00C6FF, #0072FF);
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .section {
+      padding: 60px 20px;
+    }
+    .result-box {
+      background: rgba(255, 255, 255, 0.95);
+      color: #000;
+      border-radius: 12px;
+      padding: 40px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .result-box h4 {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+<header class="bg-dark shadow-sm py-3 mb-4">
+  <div class="container d-flex justify-content-between align-items-center">
+    <h1 class="h4 text-white">PR Career Platform</h1>
+    <nav>
+      <ul class="nav">
+        <li class="nav-item"><a class="nav-link text-white" href="/dashboard">ホーム</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="/profile">マイページ</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="/logout">ログアウト</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <div class="result-box">
+      <h2 class="mb-4">AI診断結果</h2>
+      <p>以下は、あなたの入力に基づくAIによる診断結果です。</p>
+
+      <h4>おすすめ職種</h4>
+      <p>広報・PRスペシャリスト、企業MC、ナレーター、イベントプランナー</p>
+
+      <h4>強み分析</h4>
+      <ul>
+        <li>豊富なメディア経験による高いコミュニケーション能力</li>
+        <li>対人スキルとプレゼン力の高さ</li>
+        <li>多様な現場での対応力と柔軟性</li>
+      </ul>
+
+      <h4>今後のキャリアアドバイス</h4>
+      <p>これまでの経験を活かしつつ、企業の広報・ブランディング領域に挑戦することをおすすめします。また、SNSやデジタルPRのスキルも今後さらに重視されるため、積極的な習得が望ましいです。</p>
+
+      <div class="text-center mt-4">
+        <a href="/profile" class="btn btn-primary">マイページに戻る</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

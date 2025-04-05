@@ -1,0 +1,78 @@
+
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>求人情報一覧 | PR Career Platform</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <style>
+    body {
+      background: linear-gradient(to right, #00C6FF, #0072FF);
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .job-list-section {
+      padding: 60px 20px;
+    }
+    .job-card {
+      background: rgba(255, 255, 255, 0.95);
+      color: #000;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .job-card h5 {
+      font-weight: bold;
+    }
+    .job-card .btn {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+<header class="bg-dark shadow-sm py-3 mb-4">
+  <div class="container d-flex justify-content-between align-items-center">
+    <h1 class="h4 text-white">PR Career Platform</h1>
+    <nav>
+      <ul class="nav">
+        <li class="nav-item"><a class="nav-link text-white" href="/dashboard">ホーム</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="/admin_dashboard">管理者トップ</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="/logout">ログアウト</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="job-list-section">
+  <div class="container">
+    <h2 class="text-center mb-5">求人情報一覧</h2>
+
+    <div class="job-card">
+      <h5>広報アシスタント募集</h5>
+      <p>株式会社メディアリンク | 東京</p>
+      <p>テレビ番組の広報アシスタント業務を担当いただきます。対人対応やイベントの進行などを含みます。</p>
+      <a href="#" class="btn btn-outline-primary btn-sm">詳細を見る</a>
+    </div>
+
+    <div class="job-card">
+      <h5>イベント司会進行（週末のみ）</h5>
+      <p>イベントカンパニーJAPAN | 大阪</p>
+      <p>土日開催イベントでのMC業務。バラエティやファッション関連など多彩なジャンルがあります。</p>
+      <a href="#" class="btn btn-outline-primary btn-sm">詳細を見る</a>
+    </div>
+
+    <div class="job-card">
+      <h5>ニュースキャスター補佐</h5>
+      <p>ニュースプロ東京 | 東京</p>
+      <p>原稿チェックや取材サポートなど、経験を積めるポジションです。アナウンサー志望者歓迎。</p>
+      <a href="#" class="btn btn-outline-primary btn-sm">詳細を見る</a>
+    </div>
+
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

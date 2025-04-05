@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}ログイン | PR Career Platform{% endblock %}
+
+{% block content %}
+<!-- 文字化け防止のため、meta charsetを追加 -->
+<meta charset="UTF-8">
+
+<h2>ログイン</h2>
+
+{% if error %}
+    <div class="alert alert-danger">
+        {{ error }}
+    </div>
+{% endif %}
+
+<form method="POST" action="/login">
+    <div class="mb-3">
+        <label for="username" class="form-label">ユーザー名</label>
+        <input type="text" class="form-control" id="username" name="username" required>
+    </div>
+    <div class="mb-3">
+        <label for="password" class="form-label">パスワード</label>
+        <input type="password" class="form-control" id="password" name="password" required>
+    </div>
+    <button type="submit" class="btn btn-primary">ログイン</button>
+</form>
+
+<!-- 新規登録ボタン -->
+<div class="mt-3">
+    <a href="{{ url_for('register_user') }}" class="btn btn-secondary">新規登録</a>
+</div>
+{% endblock %}

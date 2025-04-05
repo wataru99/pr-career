@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}PR Career Platform{% endblock %}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <header class="bg-dark text-white p-3">
+        <div class="container">
+            <h1>PR Career Platform</h1>
+        </div>
+    </header>
+
+    <main class="container mt-4">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="bg-light text-center py-3 mt-5">
+        &copy; 2025 PR Career Platform
+    </footer>
+
+    <!-- ログイン中のユーザーにログアウトボタンを表示 -->
+    {% if current_user.is_authenticated %}
+    <div class="container mt-3">
+        <form action="{{ url_for('logout') }}" method="POST">
+            <button type="submit" class="btn btn-danger">ログアウト</button>
+        </form>
+    </div>
+    {% endif %}
+
+
+</body>
+</html>

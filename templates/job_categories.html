@@ -1,0 +1,83 @@
+
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>カテゴリ別一覧 | PR Career Platform</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    body {
+      background: linear-gradient(to right, #00C6FF, #0072FF);
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .section {
+      padding: 60px 20px;
+    }
+    .category-box {
+      background: rgba(255, 255, 255, 0.95);
+      color: #000;
+      border-radius: 12px;
+      padding: 30px;
+      margin-bottom: 30px;
+    }
+    .category-box h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+    .category-box a {
+      font-weight: bold;
+      text-decoration: none;
+      color: #0072FF;
+    }
+  </style>
+</head>
+<body>
+<header class="bg-dark shadow-sm py-3 mb-4">
+  <div class="container d-flex justify-content-between align-items-center">
+    <h1 class="h4 text-white">PR Career Platform</h1>
+    <nav>
+      <ul class="nav">
+        <li class="nav-item"><a class="nav-link text-white" href="/dashboard">ホーム</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="/profile">マイページ</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="/logout">ログアウト</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <h2 class="mb-5">カテゴリ別 求職者一覧</h2>
+
+    <div class="category-box">
+      <h3><i class="fas fa-microphone"></i> アナウンサー</h3>
+      <p>ニュース・リポート・MCなど、伝える力に優れた人材が揃っています。</p>
+      <a href="/job-seekers/announcer">このカテゴリを閲覧する →</a>
+    </div>
+
+    <div class="category-box">
+      <h3><i class="fas fa-star"></i> タレント</h3>
+      <p>バラエティ・イベントなど、明るく華やかな場に強い人材を紹介します。</p>
+      <a href="/job-seekers/talent">このカテゴリを閲覧する →</a>
+    </div>
+
+    <div class="category-box">
+      <h3><i class="fas fa-theater-masks"></i> 舞台女優</h3>
+      <p>演技力・表現力に長けたキャリアを持つ求職者を集めました。</p>
+      <a href="/job-seekers/stage_actor">このカテゴリを閲覧する →</a>
+    </div>
+
+    <div class="category-box">
+      <h3><i class="fas fa-bullhorn"></i> ナレーター</h3>
+      <p>声のプロフェッショナルによるナレーション対応人材。</p>
+      <a href="/job-seekers/narrator">このカテゴリを閲覧する →</a>
+    </div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
